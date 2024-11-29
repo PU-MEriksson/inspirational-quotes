@@ -10,4 +10,30 @@
   --neutral-light: #e3dddb; /*backgrounds*/
   --accent-color: #d1ab83; /*buttons, sections that need to stand out*/
   --text-color: #33312e;
+  --font-size-base: 16px;
+}
+
+body {
+  background-color: var(--neutral-light);
+}
+
+.image-header {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.image-header img {
+  width: 100vw;
+  height: auto;
+}
+
+.image-header h1 {
+  font-family: "Amaranth", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 7rem;
+  color: var(--primary-dark);
+  position: absolute;
+  padding: 3rem;
 }
