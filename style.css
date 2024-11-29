@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --primary-dark: #5a4a40; /*logo, headlines, background */
+  --primary-light: #8e6d56; /*logo, headlines, buttons */
+  --neutral-dark: #9c928c; /*backgrounds */
+  --neutral-light: #e3dddb; /*backgrounds*/
+  --accent-color: #d1ab83; /*buttons, sections that need to stand out*/
+  --text-color: #33312e;
+}
