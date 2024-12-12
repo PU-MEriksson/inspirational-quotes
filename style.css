@@ -11,16 +11,33 @@
   --accent-color: #d1ab83; /*buttons, sections that need to stand out*/
   --text-color: #33312e;
   --font-size-base: 16px;
+  --font-heading-large: "Amaranth", serif;
+  --font-heading-small: "Wix Madefor Text", sans-serif;
+  --font-body: "Work Sans", sans-serif;
 }
 
 body {
-  background-color: var(--neutral-light);
+  background-color: var(--neutral-dark);
+  font-family: var(--font-body);
 }
 
 .image-header {
   display: flex;
   width: 100%;
   position: relative;
+}
+
+.background-image {
+  width: 100vw;
+  min-height: 50vh;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(
+      180deg,
+      rgba(156, 146, 140, 0.1) 35.31%,
+      #9c928c 100%
+    ),
+    url(/images/rocks.jpg);
 }
 
 .image-header img {
@@ -32,8 +49,60 @@ body {
   font-family: "Amaranth", serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 7rem;
+  /* font-size: 7rem; */
+  font-size: 11vw;
   color: var(--primary-dark);
   position: absolute;
   padding: 3rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.place-for-quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  max-width: 90vw;
+  min-height: 300px;
+  max-height: 600px;
+  background-color: var(--neutral-light);
+  gap: 2rem;
+  border-radius: 1rem;
+}
+
+h2 {
+  margin-top: 1rem;
+  font-family: var(--font-heading-small);
+}
+
+.place-for-quote p {
+  font-family: var(--font-body);
+  margin: 5% 5% 0;
+  max-width: 600px;
+}
+
+button {
+  all: unset;
+  background-color: var(--accent-color);
+  min-height: 2rem;
+  min-width: 6rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(2px);
+  background-color: #b08e66;
 }
