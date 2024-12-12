@@ -37,12 +37,7 @@ body {
       rgba(156, 146, 140, 0.1) 35.31%,
       #9c928c 100%
     ),
-    url(/images/rocks.jpg);
-}
-
-.image-header img {
-  width: 100vw;
-  height: auto;
+    url(./images/rocks.jpg);
 }
 
 .image-header h1 {
