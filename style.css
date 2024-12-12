@@ -29,7 +29,7 @@ body {
 
 .background-image {
   width: 100vw;
-  min-height: 50vh;
+  min-height: clamp(40vh, 50vw, 70vh);
   background-size: cover;
   background-position: center;
   background-image: linear-gradient(
